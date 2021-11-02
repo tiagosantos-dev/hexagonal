@@ -4,10 +4,10 @@ import com.ts.hexagonal.domain.entities.Person;
 import com.ts.hexagonal.domain.ports.CarRepository;
 import com.ts.hexagonal.domain.ports.PersonRepository;
 
-public class CreatePerson {
+public class PersonService {
     private final PersonRepository personRepository;
 
-   public CreatePerson(PersonRepository personRepository){
+   public PersonService(PersonRepository personRepository){
        this.personRepository = personRepository;
    }
 

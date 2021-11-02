@@ -3,11 +3,11 @@ package com.ts.hexagonal.domain.services.car;
 import com.ts.hexagonal.domain.entities.Car;
 import com.ts.hexagonal.domain.ports.CarRepository;
 
-public class RegisterNewCar {
+public class CarService {
 
     private final CarRepository carRepository;
 
-    public RegisterNewCar(CarRepository  carRepository){
+    public CarService(CarRepository  carRepository){
         this.carRepository = carRepository;
     }
 

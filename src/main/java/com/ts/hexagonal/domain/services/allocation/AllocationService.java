@@ -3,10 +3,10 @@ package com.ts.hexagonal.domain.services.allocation;
 import com.ts.hexagonal.domain.entities.Allocation;
 import com.ts.hexagonal.domain.ports.AllocationRepository;
 
-public class CreateAllocation {
+public class AllocationService {
     private final AllocationRepository allocationRepository;
 
-    public CreateAllocation(AllocationRepository allocationRepository){
+    public AllocationService(AllocationRepository allocationRepository){
         this.allocationRepository = allocationRepository;
     }
 
