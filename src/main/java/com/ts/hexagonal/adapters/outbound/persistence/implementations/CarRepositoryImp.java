@@ -1,5 +1,6 @@
-package com.ts.hexagonal.adapters.outbound.persistence;
+package com.ts.hexagonal.adapters.outbound.persistence.implementations;
 
+import com.ts.hexagonal.adapters.outbound.persistence.repositories.SpringDataH2CarRepository;
 import com.ts.hexagonal.adapters.outbound.persistence.entities.CarEntity;
 import com.ts.hexagonal.domain.entities.Car;
 import com.ts.hexagonal.domain.ports.CarRepository;
@@ -14,10 +15,10 @@ import java.util.UUID;
 
 @Component
 @Primary
-public class H2CarRepository implements CarRepository {
+public class CarRepositoryImp implements CarRepository {
     private final SpringDataH2CarRepository springDataH2CarRepository;
 
-    public H2CarRepository(final SpringDataH2CarRepository springDataH2CarRepository){
+    public CarRepositoryImp(final SpringDataH2CarRepository springDataH2CarRepository){
         this.springDataH2CarRepository = springDataH2CarRepository;
     }
 

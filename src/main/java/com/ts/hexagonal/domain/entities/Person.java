@@ -7,12 +7,12 @@ public class Person {
     private UUID id;
     private String name;
     private String phone;
-    private Email email;
+    private String email;
     private LocalDate birthDate;
 
     public Person(){}
 
-    public Person(UUID id, String name, String phone, Email email, LocalDate birthDate) {
+    public Person(UUID id, String name, String phone, String email, LocalDate birthDate) {
         this.id = id;
         this.name = name;
         this.phone = phone;
@@ -32,7 +32,7 @@ public class Person {
         return phone;
     }
 
-    public Email getEmail() {
+    public String getEmail() {
         return email;
     }
 

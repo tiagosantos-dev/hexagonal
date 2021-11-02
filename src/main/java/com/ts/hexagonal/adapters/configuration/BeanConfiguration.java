@@ -16,16 +16,16 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan(basePackageClasses = HexagonalApplication.class)
 public class BeanConfiguration {
-//    @Bean
-//    PersonService personService(PersonRepository personRepository) {
-//        return new PersonService(personRepository);
-//    }
+
 
 //    @Bean
 //    AllocationService allocationService(AllocationRepository allocationRepository) {
 //        return new AllocationService(allocationRepository);
 //    }
-
+    @Bean
+    PersonService personService(PersonRepository personRepository) {
+        return new PersonService(personRepository);
+    }
     @Bean
     CarService carService(CarRepository carRepository) {
         return new CarService(carRepository);

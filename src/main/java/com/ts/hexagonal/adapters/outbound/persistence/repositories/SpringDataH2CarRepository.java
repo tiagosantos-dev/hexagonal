@@ -1,4 +1,4 @@
-package com.ts.hexagonal.adapters.outbound.persistence;
+package com.ts.hexagonal.adapters.outbound.persistence.repositories;
 
 import com.ts.hexagonal.adapters.outbound.persistence.entities.CarEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
