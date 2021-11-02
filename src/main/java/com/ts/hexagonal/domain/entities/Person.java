@@ -9,4 +9,48 @@ public class Person {
     private String phone;
     private Email email;
     private LocalDate birthDate;
+
+    public Person(){}
+
+    public Person(UUID id, String name, String phone, Email email, LocalDate birthDate) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+        this.email = email;
+        this.birthDate = birthDate;
+    }
+
+    public UUID getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public Email getEmail() {
+        return email;
+    }
+
+
+
+
+    public LocalDate getBirthDate() {
+        return birthDate;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", phone='" + phone + '\'' +
+                ", email=" + email +
+                ", birthDate=" + birthDate +
+                '}';
+    }
 }
