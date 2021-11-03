@@ -17,4 +17,16 @@ public class AllocationEntity {
 
     @OneToOne
     private CarEntity car;
+
+    public UUID getId() {
+        return id;
+    }
+
+    public PersonEntity getPerson() {
+        return person;
+    }
+
+    public CarEntity getCar() {
+        return car;
+    }
 }

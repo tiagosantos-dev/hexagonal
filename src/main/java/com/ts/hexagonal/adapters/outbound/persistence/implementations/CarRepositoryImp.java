@@ -33,7 +33,8 @@ public class CarRepositoryImp implements CarRepository {
 
     @Override
     public Car persist(Car car) {
-        CarEntity carEntity =  springDataH2CarRepository.save(modelMapper.map(car, CarEntity.class));
+        CarEntity carEntity = modelMapper.map(car, CarEntity.class);
+        carEntity = springDataH2CarRepository.save(carEntity);
         return modelMapper.map(carEntity, Car.class);
     }
 
